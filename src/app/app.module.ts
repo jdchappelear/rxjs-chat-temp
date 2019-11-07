@@ -24,6 +24,7 @@ import { ChatPageComponent } from './chat-page/chat-page.component';
 import { FromNowPipe } from './pipes/from-now.pipe';
 
 import { AuthService } from './services//auth.service';
+import { LoginComponent } from './login/login.component';
 
 export const rootRouterConfig: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -43,7 +44,8 @@ export const rootRouterConfig: Routes = [
     ChatThreadsComponent,
     ChatWindowComponent,
     ChatPageComponent,
-    FromNowPipe
+    FromNowPipe,
+    LoginComponent
   ],
   imports: [
     AngularFireModule.initializeApp(environment.firebase),
