@@ -23,6 +23,8 @@ import { ChatWindowComponent } from './chat-window/chat-window.component';
 import { ChatPageComponent } from './chat-page/chat-page.component';
 import { FromNowPipe } from './pipes/from-now.pipe';
 
+import { AuthService } from './services//auth.service';
+
 export const rootRouterConfig: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
 //  { path: 'login', component: LoginComponent, canActivate: [AuthGuard] },
